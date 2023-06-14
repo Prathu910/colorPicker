@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+
+.form {
+  padding: 25px;
+}
+
+form {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+input {
+  height: 50px;
+  width: 80px;
+  border: none;
+  outline: none;
+}
+
+select {
+  width: 300px;
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+  text-transform: capitalize;
+  transition: 1s;
+}
+
+button {
+  font-size: 1rem;
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  padding: 12px 20px;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+  margin-left: auto;
+  margin-right: 1rem;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.colors {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 25px;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.color-value {
+  height: 300px;
+  width: 125px;
+  background-color: brown;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.color-value:hover {
+  transform: scale(1.05);
+}
