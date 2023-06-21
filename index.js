@@ -44,15 +44,9 @@ colorDivs.forEach((div) => {
     const hexColorText = div.nextElementSibling;
     div.textContent = hexColorText.textContent;
   });
-});
-
-colorDivs.forEach((div) => {
   div.addEventListener("mouseleave", () => {
     div.textContent = "";
   });
-});
-
-colorDivs.forEach((div) => {
   div.addEventListener("click", () => {
     navigator.clipboard.writeText(div.textContent);
     div.textContent = "Copied";
